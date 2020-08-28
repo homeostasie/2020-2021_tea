@@ -43,19 +43,21 @@
 
 ##### Troisième
 
-* Chapitre 1 - Calcul littéral 
-* Chapitre 2 - Fonctions 
-* Chapitre 3 - Théorème de Pythagore 
+* Chapitre 1 - Calcul algébrique et littéral 
+* Chapitre 2 - Triangles semblables
+* Chapitre 3 - Fonctions 
 * Chapitre 4 - Théorème de Thalès 
 * Chapitre 5 - Fonctions linéaires
-* Chapitre 6 - Statistiques
-* Chapitre 7 - Arithmétique 
-* Chapitre 8 - Probabilité
-* Chapitre 9 - Trigonométrie 
-* Chapitre 10 - Équations
-* Chapitre 11 - Transformations du plan
-* Chapitre 12 - Fonctions affines 
-* Chapitre 13 - Volume : repérages, sections 
+* Chapitre 6 - Théorème de Pythagore 
+* Chapitre 7 - Statistiques
+* Chapitre 8 - Arithmétique 
+* Chapitre 9 - Probabilité
+* Chapitre 10 - Développer et Factoriser
+* Chapitre 11 - Trigonométrie 
+* Chapitre 12 - Équations
+* Chapitre 13 - Transformations du plan
+* Chapitre 14 - Fonctions affines 
+* Chapitre 15 - Volume : repérages, sections 
 
 
 
@@ -65,7 +67,7 @@
 
 ### Livre utilisé
 
-- Bordas - Myriade - 4è
+- Bordas - Myriade - 5è
 - Bordas - Myriade - 3è
 
 ## Contributeur
