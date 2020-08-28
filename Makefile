@@ -1,7 +1,6 @@
 # Dossiers
 CODE := $(shell pwd)
 
-
 all: 5cinq 3troi
 
 # Progression
@@ -11,7 +10,6 @@ all: 5cinq 3troi
 
 3troi:
 	pdflatex progression-3-troisieme.tex
-
 
 # nettoyage			
 proper:
