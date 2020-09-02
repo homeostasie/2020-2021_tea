@@ -32,15 +32,21 @@ auto1:
 # Chapitre 1
 
 1exo:
-	latex 5x1-repondre-a-des-questions-de-calculs/5x1-exo-pyro.tex
+	latex 5x1-calculer-et-rediger-des-calculs/5x1-exo-pyro.tex
 	dvips 5x1-exo-pyro.dvi
 	ps2pdf 5x1-exo-pyro.ps
 	mv 5x1-exo-pyro.pdf '$(PDFDIR)'/5x1-exo-pyro.pdf
+	
 
 1cours:
-	pdflatex 5x1-repondre-a-des-questions-de-calculs/5x1-cours.tex
-	pdflatex 5x1-repondre-a-des-questions-de-calculs/5x1-cours.tex
+	pdflatex 5x1-calculer-et-rediger-des-calculs/5x1-cours.tex
+	pdflatex 5x1-calculer-et-rediger-des-calculs/5x1-cours.tex
 	mv 5x1-cours.pdf '$(PDFDIR)'/5x1-cours-calculer.pdf
+
+1photocop:
+	pdflatex 5x1-calculer-et-rediger-des-calculs/5x1-photocop.tex
+	pdflatex 5x1-calculer-et-rediger-des-calculs/5x1-photocop.tex
+	mv 5x1-photocop.pdf '$(PDFDIR)'/5x1-photocop-calculer.pdf
 
 
 # nettoyage		
