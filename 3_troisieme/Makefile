@@ -1,30 +1,49 @@
 # Dossiers
 CODE := $(shell pwd)
+PDFDIR = ../_pdf/3eme
+THEME = 
 
+# Visualiser les pdf
+LOG=evince
 
-all: 5cinq 3troi
+# Créer le dossier pdf s'il n'éxiste pas.
+target:
+	test -d $(PDFDIR) || mkdir $(PDFDIR)
 
-# Automatismes
+all: img poly proper
+
+# Générations des images
+FIGSRC = $(wildcard 4x4-pythagore/sources/*.ipe 4x2-trigonometrie/sources/*.ipe 4x6-thales/sources/*ipe)
+
+FIGOBJ = $(FIGSRC:.ipe=.pdf)
+
+img: $(FIGOBJ)
+
+4x4-pythagore/sources/%.pdf: 4x4-pythagore/sources/%.ipe
+	ipetoipe -pdf $<
+
+# Mise en route
 
 auto1:
-	latex 0_automatismes/S1-10_mini-exo.tex
+	latex 3x0_automatismes/S1-10_mini-exo.tex
 	dvips S1-10_mini-exo.dvi
 	ps2pdf S1-10_mini-exo.ps
 
+# Chapitre 1
 
-# Progression
+1exo:
+	latex 3x1-calcul-algebrique-et-litteral/3x1-exo-pyro.tex
+	dvips 3x1-exo-pyro.dvi
+	ps2pdf 3x1-exo-pyro.ps
+	mv 3x1-exo-pyro.pdf '$(PDFDIR)'/3x1-exo-pyro.pdf
 
-5cinq:
-	pdflatex progression-5-cinquieme.tex
-
-3troi:
-	pdflatex progression-3-troisieme.tex
-
+1cours:
+	pdflatex 3x1-calcul-algebrique-et-litteral/3x1-cours.tex
+	pdflatex 3x1-calcul-algebrique-et-litteral/3x1-cours.tex
+	mv 3x1-cours.pdf '$(PDFDIR)'/3x1-cours-calculer.pdf
 
 
-
-# nettoyage			
+# nettoyage		
 proper:
 	rm -f *.log *.toc *.aux *.nav *.snm *.out *.bbl *.blg *.dvi *.ps
 	rm -f *.backup *~
-	
