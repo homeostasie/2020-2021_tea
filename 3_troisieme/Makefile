@@ -43,6 +43,12 @@ auto1:
 	mv 3x1-cours.pdf '$(PDFDIR)'/3x1-cours-calculer.pdf
 
 
+
+2ie:
+	pdflatex 3x2-triangles-semblables/3x2-ie.tex
+	pdflatex 3x2-triangles-semblables/3x2-ie.tex
+	mv 3x2-ie.pdf '$(PDFDIR)'/3x2-ie.pdf
+
 # nettoyage		
 proper:
 	rm -f *.log *.toc *.aux *.nav *.snm *.out *.bbl *.blg *.dvi *.ps
