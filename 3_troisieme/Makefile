@@ -49,6 +49,11 @@ auto1:
 	pdflatex 3x2-triangles-semblables/3x2-ie.tex
 	mv 3x2-ie.pdf '$(PDFDIR)'/3x2-ie.pdf
 
+4cours:
+	pdflatex 3x4-factoriser/3x4-cours.tex
+	pdflatex 3x4-factoriser/3x4-cours.tex
+	mv 3x4-cours.pdf '$(PDFDIR)'/3x4-factoriser.pdf
+
 # nettoyage		
 proper:
 	rm -f *.log *.toc *.aux *.nav *.snm *.out *.bbl *.blg *.dvi *.ps
