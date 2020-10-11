@@ -13,13 +13,13 @@ target:
 all: img poly proper
 
 # Générations des images
-FIGSRC = $(wildcard 4x4-pythagore/sources/*.ipe 4x2-trigonometrie/sources/*.ipe 4x6-thales/sources/*ipe)
+FIGSRC = $(wildcard 5x2-triangles/sources/*.ipe 4x2-trigonometrie/sources/*.ipe 4x6-thales/sources/*ipe)
 
 FIGOBJ = $(FIGSRC:.ipe=.pdf)
 
 img: $(FIGOBJ)
 
-4x4-pythagore/sources/%.pdf: 4x4-pythagore/sources/%.ipe
+5x2-triangles/sources/%.pdf: 5x2-triangles/sources/%.ipe
 	ipetoipe -pdf $<
 
 # Mise en route
@@ -47,6 +47,14 @@ auto1:
 	pdflatex 5x1-calculer-et-rediger-des-calculs/5x1-photocop.tex
 	pdflatex 5x1-calculer-et-rediger-des-calculs/5x1-photocop.tex
 	mv 5x1-photocop.pdf '$(PDFDIR)'/5x1-photocop-calculer.pdf
+
+
+# Chapitre 2
+
+2ie:
+	pdflatex 5x2-triangles/5x2-ie.tex
+	pdflatex 5x2-triangles/5x2-ie.tex
+	mv 5x2-ie.pdf '$(PDFDIR)'/5x2-ie.pdf
 
 
 # nettoyage		
