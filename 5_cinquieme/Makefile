@@ -56,6 +56,12 @@ auto1:
 	pdflatex 5x2-triangles/5x2-ie.tex
 	mv 5x2-ie.pdf '$(PDFDIR)'/5x2-ie.pdf
 
+2h:
+	pdflatex 5x2-triangles/5x2-hauteur.tex
+	pdflatex 5x2-triangles/5x2-hauteur.tex
+	mv 5x2-hauteur.pdf '$(PDFDIR)'/5x2-hauteur.pdf
+
+
 
 # nettoyage		
 proper:
