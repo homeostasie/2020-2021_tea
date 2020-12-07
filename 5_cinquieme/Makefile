@@ -62,6 +62,13 @@ auto1:
 	mv 5x2-hauteur.pdf '$(PDFDIR)'/5x2-hauteur.pdf
 
 
+# Chapitre 2
+
+3ie:
+	pdflatex 5x3-fractions-egales/5x3-ie.tex
+	pdflatex 5x3-fractions-egales/5x3-ie.tex
+	mv 5x3-ie.pdf '$(PDFDIR)'/5x3-ie.pdf
+
 
 # nettoyage		
 proper:
