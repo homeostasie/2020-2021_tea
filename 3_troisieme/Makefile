@@ -54,6 +54,11 @@ auto1:
 	pdflatex 3x4-factoriser/3x4-cours.tex
 	mv 3x4-cours.pdf '$(PDFDIR)'/3x4-factoriser.pdf
 
+4ie:
+	pdflatex 3x4-factoriser/3x4-ie.tex
+	pdflatex 3x4-factoriser/3x4-ie.tex
+	mv 3x4-ie.pdf '$(PDFDIR)'/3x4-ie.pdf
+
 # nettoyage		
 proper:
 	rm -f *.log *.toc *.aux *.nav *.snm *.out *.bbl *.blg *.dvi *.ps
