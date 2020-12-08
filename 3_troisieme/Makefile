@@ -59,6 +59,12 @@ auto1:
 	pdflatex 3x4-factoriser/3x4-ie.tex
 	mv 3x4-ie.pdf '$(PDFDIR)'/3x4-ie.pdf
 
+5ie:
+	latex 3x5-thales/3x5-ie.tex
+	dvips 3x5-ie.dvi
+	ps2pdf 3x5-ie.ps
+	mv 3x5-ie.pdf '$(PDFDIR)'/3x5-ie.pdf
+
 # nettoyage		
 proper:
 	rm -f *.log *.toc *.aux *.nav *.snm *.out *.bbl *.blg *.dvi *.ps
