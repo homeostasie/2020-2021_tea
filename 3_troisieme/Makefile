@@ -13,13 +13,13 @@ target:
 all: img poly proper
 
 # Générations des images
-FIGSRC = $(wildcard 4x4-pythagore/sources/*.ipe 4x2-trigonometrie/sources/*.ipe 4x6-thales/sources/*ipe)
+FIGSRC = $(wildcard 3x6-pythagore/sources/*.ipe 4x2-trigonometrie/sources/*.ipe 4x6-thales/sources/*ipe)
 
 FIGOBJ = $(FIGSRC:.ipe=.pdf)
 
 img: $(FIGOBJ)
 
-4x4-pythagore/sources/%.pdf: 4x4-pythagore/sources/%.ipe
+3x6-pythagore/sources/%.pdf: 3x6-pythagore/sources/%.ipe
 	ipetoipe -pdf $<
 
 # Mise en route
@@ -64,6 +64,17 @@ auto1:
 	dvips 3x5-ie.dvi
 	ps2pdf 3x5-ie.ps
 	mv 3x5-ie.pdf '$(PDFDIR)'/3x5-ie.pdf
+
+6cours:
+	pdflatex 3x6-pythagore/3x6-pythagore.tex
+	pdflatex 3x6-pythagore/3x6-pythagore.tex
+	mv 3x6-pythagore.pdf '$(PDFDIR)'/3x6-pythagore.pdf
+
+
+6ie:
+	pdflatex 3x6-pythagore/3x6-ie.tex
+	pdflatex 3x6-pythagore/3x6-ie.tex
+	mv 3x6-ie.pdf '$(PDFDIR)'/3x6-ie.pdf	
 
 # nettoyage		
 proper:
