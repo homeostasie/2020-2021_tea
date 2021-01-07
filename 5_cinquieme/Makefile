@@ -51,6 +51,11 @@ auto1:
 
 # Chapitre 2
 
+2cours:
+	pdflatex 5x2-triangles/5x2-cours.tex
+	pdflatex 5x2-triangles/5x2-cours.tex
+	mv 5x2-cours.pdf '$(PDFDIR)'/5x2-cours-triangle.pdf
+
 2ie:
 	pdflatex 5x2-triangles/5x2-ie.tex
 	pdflatex 5x2-triangles/5x2-ie.tex
