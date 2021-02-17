@@ -74,7 +74,27 @@ auto1:
 6ie:
 	pdflatex 3x6-pythagore/3x6-ie.tex
 	pdflatex 3x6-pythagore/3x6-ie.tex
-	mv 3x6-ie.pdf '$(PDFDIR)'/3x6-ie.pdf	
+	mv 3x6-ie.pdf '$(PDFDIR)'/3x6-ie.pdf
+
+
+bb:
+	latex 3xz-brevet-blanc/bb1.tex
+	dvips bb1.dvi
+	ps2pdf bb1.ps
+	mv bb1.pdf '$(PDFDIR)'/bb1.pdf		
+
+bbcc:
+	latex 3xz-brevet-blanc/bb1-cor.tex
+	dvips bb1-cor.dvi
+	ps2pdf bb1-cor.ps
+	mv bb1-cor.pdf '$(PDFDIR)'/bb1-cor.pdf		
+
+
+
+prep:
+	pdflatex 3xz-brevet-blanc/prep.tex
+	pdflatex 3xz-brevet-blanc/prep.tex
+	mv prep.pdf '$(PDFDIR)'/prep.pdf
 
 # nettoyage		
 proper:

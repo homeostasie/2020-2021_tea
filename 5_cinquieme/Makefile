@@ -75,6 +75,13 @@ auto1:
 	mv 5x3-ie.pdf '$(PDFDIR)'/5x3-ie.pdf
 
 
+# Chapitre 2
+
+6ie:
+	pdflatex 5x6-fractions-calculs/5x6-ie.tex
+	pdflatex 5x6-fractions-calculs/5x6-ie.tex
+	mv 5x6-ie.pdf '$(PDFDIR)'/5x6-ie.pdf
+
 # nettoyage		
 proper:
 	rm -f *.log *.toc *.aux *.nav *.snm *.out *.bbl *.blg *.dvi *.ps
