@@ -89,7 +89,10 @@ bbcc:
 	ps2pdf bb1-cor.ps
 	mv bb1-cor.pdf '$(PDFDIR)'/bb1-cor.pdf		
 
-
+9ie:
+	pdflatex 3x9-probabilite/3x9-ie.tex
+	pdflatex 3x9-probabilite/3x9-ie.tex
+	mv 3x9-ie.pdf '$(PDFDIR)'/3x9-ie.pdf
 
 prep:
 	pdflatex 3xz-brevet-blanc/prep.tex
