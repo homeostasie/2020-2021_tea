@@ -82,6 +82,25 @@ auto1:
 	pdflatex 5x6-fractions-calculs/5x6-ie.tex
 	mv 5x6-ie.pdf '$(PDFDIR)'/5x6-ie.pdf
 
+
+# Chapitre 2
+
+7ie:
+	pdflatex 5x7-proportionnalite/5x7-ie.tex
+	pdflatex 5x7-proportionnalite/5x7-ie.tex
+	mv 5x7-ie.pdf '$(PDFDIR)'/5x7-ie.pdf	
+
+# Chapitre 2
+
+8ie:
+	latex 5x8-relatifs/5x8-ie.tex
+	dvips 5x8-ie.dvi
+	ps2pdf 5x8-ie.ps
+	mv 5x8-ie.pdf '$(PDFDIR)'/5x8-ie.pdf	
+
+
+
+
 # nettoyage		
 proper:
 	rm -f *.log *.toc *.aux *.nav *.snm *.out *.bbl *.blg *.dvi *.ps
