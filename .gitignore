@@ -16,3 +16,8 @@ _pdf/*
 *.pdf
 *.nav
 *.snm
+*.log
+*.auxlock
+*.ps
+*.out
+*.pre
