@@ -76,6 +76,10 @@ auto1:
 	pdflatex 3x6-pythagore/3x6-ie.tex
 	mv 3x6-ie.pdf '$(PDFDIR)'/3x6-ie.pdf
 
+11cours:
+	pdflatex 3x11-equations/3x11-equations.tex
+	pdflatex 3x11-equations/3x11-equations.tex
+	mv 3x11-equations.pdf '$(PDFDIR)'/3x11-equations.pdf
 
 bb:
 	latex 3xz-brevet-blanc/bb1.tex
