@@ -13,7 +13,7 @@ target:
 all: img poly proper
 
 # Générations des images
-FIGSRC = $(wildcard 5x2-triangles/sources/*.ipe 4x2-trigonometrie/sources/*.ipe 4x6-thales/sources/*ipe)
+FIGSRC = $(wildcard 5x2-triangles/sources/*.ipe 5x10-angles/sources/*.ipe 4x6-thales/sources/*ipe)
 
 FIGOBJ = $(FIGSRC:.ipe=.pdf)
 
@@ -21,6 +21,9 @@ img: $(FIGOBJ)
 
 5x2-triangles/sources/%.pdf: 5x2-triangles/sources/%.ipe
 	ipetoipe -pdf $<
+
+5x10-angles/sources/%.pdf: 5x10-angles/sources/%.ipe
+	ipetoipe -pdf $<	
 
 # Mise en route
 
@@ -98,8 +101,20 @@ auto1:
 	ps2pdf 5x8-ie.ps
 	mv 5x8-ie.pdf '$(PDFDIR)'/5x8-ie.pdf	
 
+10cours:
+	pdflatex 5x10-angles/5x10-angles.tex
+	pdflatex 5x10-angles/5x10-angles.tex
+	mv 5x10-angles.pdf '$(PDFDIR)'/5x10-angles.pdf	
 
+10pres:
+	pdflatex 5x10-angles/5x10-pres.tex
+	pdflatex 5x10-angles/5x10-pres.tex
+	mv 5x10-pres.pdf '$(PDFDIR)'/5x10-pres.pdf	
 
+11ie:
+	pdflatex 5x11-calcul-litteral/5x11-ie.tex
+	pdflatex 5x11-calcul-litteral/5x11-ie.tex
+	mv 5x11-ie.pdf '$(PDFDIR)'/5x11-ie.pdf
 
 # nettoyage		
 proper:
